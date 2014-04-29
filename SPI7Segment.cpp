@@ -10,7 +10,7 @@
 SPI7SegmentClass SPI7Segment;
 
 void SPI7SegmentClass::command(char command, char data) {
-  digitalWrite(SS, LOW); // enlow to select
+  digitalWrite(SS, LOW); // low to select
   SPI.transfer(command);    // command
   if ( command != 0x76 && command != 0x81 ) {
     SPI.transfer(data);    // data

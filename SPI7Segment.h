@@ -13,7 +13,7 @@
 
 class SPI7SegmentClass {
 public:
-  void command(char command, char data);
+  static void command(char command, char data);
   static void display(char digit1, char digit2, char digit3, char digit4);
   static void number(unsigned short num, unsigned short base);
 };
